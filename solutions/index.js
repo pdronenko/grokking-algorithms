@@ -1,4 +1,3 @@
-import half from './half';
+import binarySearch from './01-binary-search';
 
-export default half;
-console.log(half(6));
+export { binarySearch };
