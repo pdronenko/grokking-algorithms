@@ -6,4 +6,4 @@
 
 ##
 
-![Image of Yaktocat](https://github.com/pdronenko/grokking-algorithms/raw/master/images/grokking-algorithms.png)
+![Grokking Algorithms](https://github.com/pdronenko/grokking-algorithms/raw/master/images/grokking-algorithms.png)
