@@ -1,4 +1,4 @@
-import { binarySearch, selectionSort } from '../solutions';
+import { binarySearch, selectionSort, factorial } from '../solutions';
 
 test('binarySearch', () => {
   const list = [2, 5, 7, 12, 23, 78, 145, 523];
@@ -13,4 +13,10 @@ test('selectionSort', () => {
   expect(selectionSort(list)).toEqual(expectedResult);
   expect(selectionSort([0])).toEqual([0]);
   expect(selectionSort([])).toEqual([]);
+});
+
+test('factorial', () => {
+  expect(factorial(1)).toBe(1);
+  expect(factorial(9)).toBe(362880);
+  expect(factorial(11)).toBe(39916800);
 });
