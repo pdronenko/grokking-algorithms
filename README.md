@@ -18,6 +18,7 @@ Grokking Algorithms implementations in JavaScript
 2. [**Selection sort**](solutions/02-selection-sort.js)
 3. [**Recursion factorial**](solutions/03-recursion-factorial.js)
 4. [**Quick sort**](solutions/04-quicksort.js)
+5. [**Breadth first search**](solutions/05-breadth-first-search.js)
 
 ---
 

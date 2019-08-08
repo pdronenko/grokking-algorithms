@@ -1,5 +1,5 @@
 import {
-  binarySearch, selectionSort, factorial, quickSort,
+  binarySearch, selectionSort, factorial, quickSort, breadthFirstSearch,
 } from '../solutions';
 
 test('binarySearch', () => {
@@ -28,4 +28,17 @@ test('quicksort', () => {
   const expectedResult = [-565, 6, 12, 26, 34, 79, 468, 787, 2634, 3246, 8765, 23424];
   expect(quickSort([1])).toEqual([1]);
   expect(quickSort(list)).toEqual(expectedResult);
+});
+
+test('breadthFirstSearch', () => {
+  const graph = {};
+  graph.you = ['alice', 'bob', 'claire'];
+  graph.bob = ['anuj', 'peggy'];
+  graph.alice = ['peggy'];
+  graph.claire = ['thom', 'jonny'];
+  graph.anuj = [];
+  graph.peggy = [];
+  graph.thom = [];
+  expect(breadthFirstSearch('you', graph)).toBe('thom');
+  expect(breadthFirstSearch('bob', graph)).toBeFalsy();
 });
